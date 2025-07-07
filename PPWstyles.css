@@ -60,7 +60,7 @@ body{
 }
 
 #aboutMe{
-    background-color: red;
+    background-color: #111111;
     height: 100vh;
     display: flex;
     flex-direction: row;
@@ -83,26 +83,53 @@ body{
 .aboutMeContent a{
     color: #10151a;
     position: absolute;
-    top: -25px;
-    right: 40%;
+    font-size: 10px;
+    top: -10px;
+    right: 50%;
     transform: rotate(-5deg);
 }
 
 #skills{
-    height: 100vh;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 20px;
     justify-content: center;
     align-items: center;
     padding: 50px;
 }
 
 .skillsContent{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
     padding: 0px;
+}
+
+.skillIcons{
+    font-size: 48px;
+}
+
+.eachIcon{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+
+.skillsCategoryContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.skillsCategoryContainer .categorySkills{
+    display: flex;
+    gap: 25px;
+}
+
+.categoryTitle{
+    color: white;
 }
 
 .hello{
