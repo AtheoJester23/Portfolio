@@ -59,6 +59,52 @@ body{
     padding: 50px;
 }
 
+#aboutMe{
+    background-color: red;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+.aboutMeContent{
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.aboutMeContent a{
+    color: #10151a;
+    position: absolute;
+    top: -25px;
+    right: 40%;
+    transform: rotate(-5deg);
+}
+
+#skills{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+.skillsContent{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    padding: 0px;
+}
+
 .hello{
     font-family: "Rubik Mono One", monospace;
     font-size: 3rem;
