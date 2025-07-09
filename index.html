@@ -26,7 +26,7 @@
     <link rel="stylesheet" href="PPWstyles.css">
     <title>Atheo Jester Porfolio</title>
 </head>
-<body class="">
+<body>
     <nav class="theNav shadow" id="navbar">
         <a class="navButton" href="#welcome-section">About</a>
         <a class="navButton" href="#projects">Projects</a>
@@ -41,10 +41,13 @@
 
     <section id="aboutMe">
         <div class="aboutMeContent">
-            <img width=50% src="./imgs/avatarPic.png" alt="an image of a person waving">
-            <a href="http://www.freepik.com" target="_blank">Designed by Freepik</a>
+            <img class="avatarImg" src="./imgs/avatarPic.png" alt="an image of a person waving">
+            <a id="attribute" href="http://www.freepik.com" target="_blank">Designed by Freepik</a>
         </div>
-        <p class="aboutMeContent">I'm an IT student driven by passion and eagerness to learn, create, explore web development and other fields within IT industry. I often practice and learn every day to obtain the knowledge that I don't have and solidify the knowledge that I currently have. I strive to gain experience and knowledge to become a valuable and an effective collaborator.</p>
+        <div class="aboutMeContent">
+            <p>I'm an IT student driven by passion and eagerness to learn, create, explore web development and other fields within IT industry. I often practice and learn every day to obtain the knowledge that I don't have and solidify the knowledge that I currently have. I strive to gain experience and knowledge to become a valuable and an effective collaborator.</p>
+            <a href="Atheo Jester Baltazar Resume.pdf" id="viewCV" target="_blank">View My CV</a>
+        </div>
     </section>
 
     <section id="skills">
@@ -180,7 +183,7 @@
             </a>
 
             <a href="https://atheojester23.github.io/Selfdevprog-Landing-Page/" class="single-content project-tile" target="_blank">
-                <img class="projImg" src="https://github.com/AtheoJester23/Responsive-Web-Design-Projects/blob/freeCodeCampVersion/Personal%20Portfolio%20Webpage/imgs/p1.png?raw=true" alt="">
+                <img class="projImg" src="./imgs/p1.png" alt="">
                 <div class="title">
                     <p class="titleText">SelfDevProg Landing Page</p>
                 </div>
@@ -188,7 +191,7 @@
             </a>
             
             <a href="https://www.freecodecamp.org/AtheoJester" class="single-content project-tile" target="_blank">
-                <img class="projImg" src="https://github.com/AtheoJester23/Responsive-Web-Design-Projects/blob/freeCodeCampVersion/Personal%20Portfolio%20Webpage/imgs/p2.png?raw=true" alt="">
+                <img class="projImg" src="./imgs/p2.png" alt="">
                 <p class="title">Tribute Page</p>
                 <p class="img-text">A Tribute Page About Jesus Made Out of Pure Html and CSS.</p>
             </a>
@@ -249,7 +252,6 @@
     <script>
         const observerY = new IntersectionObserver((entries) => {
             entries.forEach((entry) => {
-                console.log(entry);
                 if (entry.isIntersecting) {
                 entry.target.classList.add("show");
                 } else {

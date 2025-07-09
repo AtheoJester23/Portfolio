@@ -80,7 +80,7 @@ body{
     position: relative;
 }
 
-.aboutMeContent a{
+#attribute{
     color: #10151a;
     position: absolute;
     font-size: 10px;
@@ -88,6 +88,31 @@ body{
     right: 50%;
     transform: rotate(-5deg);
 }
+
+.avatarImg{
+    width: 50%;
+}
+
+#viewCV{
+    margin-top: 10px;
+    background-color: #3cc47c;
+    color: #111111;
+    border: solid;
+    border-color: #c3ffdf;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 10px;
+    transform: translateY(-5px);
+    transition: transform 0.15s, box-shadow 0.15s;
+    cursor: pointer;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#viewCV:hover{
+    transform: translate(0px);
+    box-shadow: none;
+}
+
 
 #skills{
     display: flex;
@@ -367,7 +392,8 @@ a:hover{
     user-select: none;
 }
 
-@media only screen and (max-width: 554px){
+
+@media only screen and (min-width: 360px) and (max-width: 720px){
     #welcome-section{
         padding: 20px;
     }
@@ -378,11 +404,36 @@ a:hover{
     }
 
     .hello{
-        font-size: 23px;
+        font-size: 16px;
     }
 
     .frontEnd{
         font-size: 10px;
+    }
+
+    #aboutMe{
+        background-color: #111111;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+        padding: 50px;
+    }
+
+    .aboutMeContent{
+        flex: none;
+        text-align: unset;
+        position: relative;
+    }
+
+    .categoryTitle{
+        font-size: 16px;
+    }
+
+    .eachIcon{
+        font-size: 12px;
     }
 
     .projTitle{
@@ -391,18 +442,43 @@ a:hover{
 
     .grid {
         display: grid;
-        grid-template-columns: repeat(2, 180px); /* ensures equal distribution */
-        gap: 30px; /* controls spacing between grid items */
-        padding: 5px; /* reduced padding for alignment */
-        justify-content: center; /* centers the grid items if they do not fill the line */
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+        padding: 50px;
+        justify-content: center;
     }
 
     .single-content .title{
         font-size: 14px;
     }
+    
+    .centProjTitle{
+        padding: 0px 50px;
+    }
 
     .img-text{
         font-size: 14px;
+    }
+
+    #education{
+
+    }
+
+    #education h1{
+        font-size: 23px;
+    }
+
+    #education h5{
+        font-size: 14px;
+        text-align: center;
+    }
+
+    #education p{
+        font-size: 12px;
+    }
+
+    .noClick{
+        font-size: 24px;
     }
 }
 
