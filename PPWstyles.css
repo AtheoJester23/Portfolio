@@ -206,7 +206,10 @@ body{
 #projects{
     background-color: #111111;
     padding: 105px 0px;
+}
 
+.theCarousel{
+    margin: 40px 0px;
 }
 
 .projTitle{
@@ -460,8 +463,8 @@ a:hover{
         font-size: 14px;
     }
 
-    #education{
-
+    .theCarousel{
+        margin-bottom: 0px;
     }
 
     #education h1{
