@@ -5,4 +5,4 @@
 ## 📓 About
 This is a repository dedicated for my portfolio, showcasing my Resume, Skills, Education, Projects, and other accounts
 
-View this project here: https://atheojester23.github.io/Portfolio/
+My portfolio is available at: https://atheo.site
