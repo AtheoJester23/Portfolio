@@ -80,6 +80,15 @@ body{
     position: relative;
 }
 
+#typed{
+    font-size: 32px;
+}
+
+.typed-cursor {
+  font-size: 48px;
+}
+
+
 #attribute{
     color: #10151a;
     position: absolute;

@@ -44,16 +44,9 @@
 
     <section id="aboutMe">
         <div class="aboutMeContent">
-            <img class="avatarImg" src="./imgs/avatarPic.png" alt="an image of a person waving">
-            <a id="attribute" href="http://www.freepik.com" target="_blank">Designed by Freepik</a>
-        </div>
-        <div class="aboutMeContent">
-            <p>
-                    I'm Atheo Jester,an IT graduate with a strong passion for front-end development / web development and a continuous
-                desire to learn. I often practice and learn every day to obtain the knowledge that I don't
-                have and solidify the knowledge that I currently have. I strive to gain experience and
-                knowledge to become a valuable and an effective collaborator.
-            </p>
+            <div>
+                <span id="typed"></span><span class="typed-cursor"></span>
+            </div>
             <a href="Public Resume.pdf" id="viewCV" target="_blank">View My CV</a>
         </div>
     </section>
@@ -380,5 +373,18 @@
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     
+    <!-- Typed.js CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+    <!-- Your JS -->
+    <script>
+        new Typed('#typed', {
+            strings: ["Hello, ", "I'm Atheo Jester, an IT graduate with a strong passion for front-end development web development and a continuous desire to learn", "I often practice and learn every day to obtain the knowledge that I don't have and solidify the knowledge that I currently have.", "I strive to gain experience and knowledge to become a valuable and an effective collaborator."],
+            typeSpeed: 50,
+            backSpeed: 25,
+            loop: true
+        });
+    </script>
+
 </body>
 </html>
